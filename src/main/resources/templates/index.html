@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<meta charset="UTF-8">
+<head th:replace="common/header :: common-header" />
+
+<body>
+	<div th:replace="common/header :: navbar" />
+
+	<div class="container">
+		<div class="row banner">
+			<!-- carousel -->
+			<div class="col-xs-6" style="margin-left: 400px;">
+				<div class="panel panel-default" style="margin-top: 20px;">
+					<div class="panel-body" style=" border-style: none;">
+						<div id="carousel-example-generic" class="carousel slide"
+							data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0"
+									class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+								<img src="/image/ac.jpg" class="img-responsive" style="height:500px;"/>
+									<div class="carousel-caption">
+										<h4>August 2019!-</h4>
+										<p>New Assassins Creed out soon!</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="/image/the surge.jpg" class="img-responsive" style="height:500px;"/>
+									<div class="carousel-caption">
+										<h4>September 2019!</h4>
+										<p>Welcome to Jericho City</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="/image/days-gone.jpg" class="img-responsive" style="height:500px;"/>
+									<div class="carousel-caption">
+										<h4>October 2019!</h4>
+										<p>Meet deacon St.John</p>
+									</div>
+								</div>
+								...
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic"
+								role="button" data-slide="prev"> <span
+								class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a> <a class="right carousel-control"
+								href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"
+								aria-hidden="true"></span> <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	<!-- 	<div class="col-xs-4">
+				<img src="/image/gamestore.png" class="img-responsive" />
+			</div> -->
+			
+		</div>
+
+		<hr />
+
+		<div class="row">
+			
+			<div class="col-xs-4">
+				<div clas="panel panel-default">
+					<div class="panel-body">
+						<a th:href="@{/hours}"><img src="/image/hours2.png" class="img-responsive" style= "margin-left: 80px;" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div clas="panel panel-default">
+					<div class="panel-body">
+						<a th:href="@{/faq}"><img src="/image/faq2.jpg" class="img-responsive"  style= "margin-left: 700px;"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+
+		<div>
+			<div class="home-headline">
+				<span>Featured Games</span>
+			</div>
+			<hr style="margin-top: -15px;" />
+		</div>
+
+
+		<div class="row">
+			<div id="featured-games" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#featured-games" data-slide-to="0" class="active"></li>
+					<li data-target="#featured-games" data-slide-to="1"></li>
+				
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="/image/shelf.png" class="img-responsive" />
+						<div class="carousel-caption">
+							<div class="row">
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/Division.jpg" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/MKII2.jpeg" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/GTA2.jpg" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/ww2-ps42.jpg" />
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="/image/shelf.png" class="img-responsive" color="black;"/>
+						<div class="carousel-caption">
+							<div class="row">
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/fcprimal2.png" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/wolfenstein-youngblood-deluxe-edition2.jpg" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/SWII2.jpg" />
+								</div>
+								<div class="col-xs-3">
+									<img class="img-responsive" src="/image/visage2.jpg" />
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="##featured-games"
+					role="button" data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a> <a class="right carousel-control" href="##featured-games"
+					role="button" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- end of container -->
+
+	<div th:replace="common/header :: footer"/>
+	 <div th:replace="common/header :: body-bottom-scripts" />
+</body>
+</html>
